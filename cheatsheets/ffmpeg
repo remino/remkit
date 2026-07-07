@@ -7,3 +7,5 @@ ffmpeg -i input.mov -tag:v hvc1 -c copy -c:s mov_text output.mp4
 # Extract a single frame at a given time
 ffmpeg -i input.mov -ss 00:01:11 -vframes 1 output_frame.jpg
 
+# Crop towards the centre
+ffmpeg -i input.mp4 -vf 'crop=WIDTH:HEIGHT:(iw-WIDTH)/2:(ih-HEIGHT)/2' -c:a copy output.mp4
