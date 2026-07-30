@@ -1,0 +1,40 @@
+# Cyberwave for Ghostty
+# Derived from iterm/profiles/Rem.json and iterm/themes/Cyberwave.itermcolors
+
+# Rem-compatible profile settings
+font-family = "Sarasa Term J Nerd Font Light"
+font-size = 16
+window-width = 80
+window-height = 40
+window-colorspace = display-p3
+term = xterm-256color
+cursor-style = underline
+cursor-style-blink = true
+background-opacity = 0.9198036501065214
+background-blur = 24
+bold-color = bright
+
+# Cyberwave palette
+palette = 0=#000000
+palette = 1=#DB5CA6
+palette = 2=#5AD0D4
+palette = 3=#E09ABE
+palette = 4=#7B80F7
+palette = 5=#C743CF
+palette = 6=#51BDE6
+palette = 7=#FFFFFF
+palette = 8=#424242
+palette = 9=#DB5CA6
+palette = 10=#5AD0D4
+palette = 11=#E09ABE
+palette = 12=#7B80F7
+palette = 13=#C743CF
+palette = 14=#51BDE6
+palette = 15=#FFFFFF
+
+background = #000000
+foreground = #E0E0E0
+cursor-color = #B735B3
+cursor-text = #000000
+selection-background = #C7DDFC
+selection-foreground = #000000
