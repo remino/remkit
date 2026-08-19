@@ -12,6 +12,7 @@ Themes and profiles for various apps.
 - [Getting Started](#getting-started)
   - [Installation](#installation)
 - [Neovim](#neovim)
+- [Midnight Commander](#midnight-commander)
 - [Usage](#usage)
 - [Windows Terminal](#windows-terminal)
 - [Contributing](#contributing)
@@ -46,6 +47,13 @@ git clone https://github.com/remino/customized.git
 
 See [_base46-cyberwave.nvim_](https://github.com/remino/base46-cyberwave.nvim)
 for a Neovim theme with the same vibes.
+
+[Back to top](#customized)
+
+## Midnight Commander
+
+Copy `mc/skins/cyberwave.ini` to `~/.local/share/mc/skins/`, then select
+_Cyberwave_ in _Options → Appearance → Skin_.
 
 [Back to top](#customized)
 
