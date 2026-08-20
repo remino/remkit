@@ -1,0 +1,6 @@
+# Cyberwave htop preset
+#
+# htop 3.3 does not expose custom RGB colors in htoprc; it only stores a
+# numeric choice among its built-in palettes. Black Night is the closest
+# native dark preset and keeps the Cyberwave terminal background intact.
+color_scheme=4

@@ -13,6 +13,7 @@ Themes and profiles for various apps.
   - [Installation](#installation)
 - [Neovim](#neovim)
 - [Midnight Commander](#midnight-commander)
+- [Terminal tools](#terminal-tools)
 - [Usage](#usage)
 - [Windows Terminal](#windows-terminal)
 - [Contributing](#contributing)
@@ -54,6 +55,20 @@ for a Neovim theme with the same vibes.
 
 Copy `mc/skins/cyberwave.ini` to `~/.local/share/mc/skins/`, then select
 _Cyberwave_ in _Options → Appearance → Skin_.
+
+[Back to top](#customized)
+
+## Terminal tools
+
+Theme files for the terminal tools are available in their respective
+directories:
+
+- `tmux/cyberwave.conf` — palette for the existing tmux theme contract; include
+  it conditionally without changing status-bar content.
+- `btop/themes/cyberwave.theme` — true-color system monitor theme.
+- `yazi/flavors/cyberwave.yazi` — Yazi flavor with matching file-type colors.
+- `htop/cyberwave.htoprc` — closest native dark htop preset; htop does not
+  currently support custom RGB palettes.
 
 [Back to top](#customized)
 
