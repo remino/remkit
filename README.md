@@ -67,8 +67,6 @@ directories:
   it conditionally without changing status-bar content.
 - `btop/themes/cyberwave.theme` — true-color system monitor theme.
 - `yazi/flavors/cyberwave.yazi` — Yazi flavor with matching file-type colors.
-- `htop/cyberwave.htoprc` — closest native dark htop preset; htop does not
-  currently support custom RGB palettes.
 
 [Back to top](#customized)
 
