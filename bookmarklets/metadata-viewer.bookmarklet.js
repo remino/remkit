@@ -117,7 +117,7 @@
 			dialog.appendChild(form)
 			form.appendChild(dl)
 
-			form.innerHTML += `<footer><nav><em><a href="https://github.com/remino/userscripts/blob/main/bookmarklets/metadata-viewer.bookmarklet.js" target="_blank">Metadata Viewer</a></em> ${version} by <a href="https://remino.net/" target="_blank">RÉMINO</a></nav></footer>`
+			form.innerHTML += `<footer><nav><em><a href="https://github.com/remino/remkit/blob/main/bookmarklets/metadata-viewer.bookmarklet.js" target="_blank">Metadata Viewer</a></em> ${version} by <a href="https://remino.net/" target="_blank">RÉMINO</a></nav></footer>`
 
 			shadow.appendChild(style)
 			shadow.appendChild(dialog)

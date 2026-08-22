@@ -7,7 +7,7 @@
 // @author       Rémino Rem
 // @match        https://www.youtube.com/*
 // @grant        none
-// @downloadURL  https://raw.githubusercontent.com/remino/userscripts/main/userscripts/youtube-ad-blocker-blocker.user.js
+// @downloadURL  https://raw.githubusercontent.com/remino/remkit/main/userscripts/youtube-ad-blocker-blocker.user.js
 // @inject-into  content
 // ==/UserScript==
 /* eslint-disable consistent-return,func-names,no-use-before-define,strict */

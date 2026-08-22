@@ -7,7 +7,7 @@
 // @match        https://mastodon.social/deck*
 // @match        https://mastodon.social/home*
 // @grant        none
-// @downloadURL  https://github.com/remino/userscripts/raw/main/userscripts/mastodon-big-compose.user.js
+// @downloadURL  https://github.com/remino/remkit/raw/main/userscripts/mastodon-big-compose.user.js
 // @inject-into  content
 // ==/UserScript==
 /* eslint-disable consistent-return,func-names,no-use-before-define,strict */

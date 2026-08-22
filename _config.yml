@@ -1,6 +1,6 @@
-title: userscripts
-description: Collection of browser userscripts
-baseurl: /userscripts
+title: remkit
+description: Personal scripts, customizations, notes, and utilities
+baseurl: /remkit
 domain: remino.github.io
 url: https://remino.github.io
 
@@ -19,7 +19,6 @@ exclude:
   - node_modules
   - userscripts
   - userstyles
-  - jeksite
   - '*.src.html'
 
 include:

@@ -1,7 +1,7 @@
 {
 	"author": "Rémino Rem <https://remino.net>",
 	"bugs": {
-		"url": "https://github.com/remino/userscripts/issues"
+		"url": "https://github.com/remino/remkit/issues"
 	},
 	"dependencies": {
 		"eslint": "^8.23.0",
@@ -9,18 +9,18 @@
 		"eslint-plugin-import": "^2.26.0",
 		"uglify-js": "^3.17.0"
 	},
-	"description": "",
+	"description": "Personal scripts, customizations, notes, and utilities",
 	"engines": {
 		"node": ">= 16.17.0",
-		"pnpm": ">= 7.9.4"
+		"npm": ">= 8"
 	},
-	"homepage": "https://github.com/remino/userscripts#readme",
+	"homepage": "https://github.com/remino/remkit#readme",
 	"license": "ISC",
-	"name": "userscripts",
+	"name": "remkit",
 	"private": true,
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/remino/userscripts.git"
+		"url": "git+https://github.com/remino/remkit.git"
 	},
 	"scripts": {
 		"start": "./bin/bookmarklets compile"
@@ -31,5 +31,6 @@
 		"@rollup/plugin-node-resolve": "^15.2.3",
 		"minify": "^11.4.0",
 		"rollup": "^4.19.0"
-	}
+	},
+	"packageManager": "npm@10.9.0"
 }
