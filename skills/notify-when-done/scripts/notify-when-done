@@ -39,7 +39,7 @@ case ${1:-} in
 		if ! enabled; then
 			exit 0
 		fi
-		if ! command -v iftttnotify >/dev/null 2>&1; then
+		if ! command -v iftttnotify > /dev/null 2>&1; then
 			printf '%s\n' 'iftttnotify is required; install it with: brew install remino/remino/iftttnotify' >&2
 			exit 127
 		fi
