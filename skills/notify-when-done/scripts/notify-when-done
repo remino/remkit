@@ -6,7 +6,7 @@ config_home=${XDG_CONFIG_HOME:-"$HOME/.config"}
 marker="$config_home/agent-skills/notify-when-done.enabled"
 
 usage() {
-	printf '%s\n' "Usage: ${0##*/} {enable|disable|status|send <title> <result> <context>}" >&2
+	printf '%s\n' "USAGE: ${0##*/} {enable|disable|status|send <title> <result> <context>}" >&2
 	exit 64
 }
 
