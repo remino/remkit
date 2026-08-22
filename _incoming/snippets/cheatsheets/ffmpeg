@@ -1,0 +1,11 @@
+# Crop a video capture on a MacBook with notch down to 16:9
+ffmpeg -i capture.mov -filter:v "crop=in_w:in_h-50,crop=ceil(in_w/2)*2:ceil(in_w/16*9/2)*2" output.mp4
+
+# Make MP4 files compatible with QuickTime (when codec allows)
+ffmpeg -i input.mov -tag:v hvc1 -c copy -c:s mov_text output.mp4
+
+# Extract a single frame at a given time
+ffmpeg -i input.mov -ss 00:01:11 -vframes 1 output_frame.jpg
+
+# Crop towards the centre
+ffmpeg -i input.mp4 -vf 'crop=WIDTH:HEIGHT:(iw-WIDTH)/2:(ih-HEIGHT)/2' -c:a copy output.mp4
