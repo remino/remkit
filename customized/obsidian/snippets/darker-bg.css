@@ -1,0 +1,16 @@
+/* Made for Mininal theme */
+
+.theme-dark {
+	--base-h: 345deg;
+	--base-s: 10%;
+	--base-l: 1%;
+	--bg1: hsla(var(--base-h), var(--base-s), var(--base-l), 0.8);
+	--bg2: hsla(0, 0%, calc(15% - 2%), 0.2);
+
+	--workspace-background-translucent: hsla(
+		var(--base-h),
+		var(--base-s),
+		var(--base-l),
+		0.8
+	);
+}

@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plist version="1.0">
+  <dict>
+    <key>name</key>
+    <string>cyberwave</string>
+    <key>settings</key>
+    <array>
+      <dict>
+        <key>settings</key>
+        <dict>
+          <key>background</key>
+          <string>#12081a</string> <!-- Deep magenta-black -->
+          <key>foreground</key>
+          <string>#d5ccff</string> <!-- Soft neon purple for text -->
+          <key>caret</key>
+          <string>#ff3ca6</string> <!-- Neon pink -->
+          <key>invisibles</key>
+          <string>#2a1445</string> <!-- Dark magenta-purple -->
+          <key>lineHighlight</key>
+          <string>#180d26</string> <!-- Statusline background -->
+          <key>selection</key>
+          <string>#341a58</string> <!-- Dark purple selection -->
+        </dict>
+      </dict>
+
+      <!-- Comments -->
+      <dict>
+        <key>scope</key>
+        <string>comment</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#55358a</string> <!-- Muted purple -->
+        </dict>
+      </dict>
+
+      <!-- Keywords (function, let, if, else) -->
+      <dict>
+        <key>scope</key>
+        <string>keyword</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#ff3ca6</string> <!-- Neon pink -->
+        </dict>
+      </dict>
+
+      <!-- Strings -->
+      <dict>
+        <key>scope</key>
+        <string>string</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#5affff</string> <!-- Cyan glow -->
+        </dict>
+      </dict>
+
+      <!-- Numbers -->
+      <dict>
+        <key>scope</key>
+        <string>constant.numeric</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#709aff</string> <!-- Soft blue -->
+        </dict>
+      </dict>
+
+      <!-- Variables -->
+      <dict>
+        <key>scope</key>
+        <string>variable</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#b870ff</string> <!-- Electric purple -->
+        </dict>
+      </dict>
+
+      <!-- Functions -->
+      <dict>
+        <key>scope</key>
+        <string>entity.name.function</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#6b92ff</string> <!-- Cyber blue -->
+        </dict>
+      </dict>
+
+      <!-- Types (int, float, bool, etc.) -->
+      <dict>
+        <key>scope</key>
+        <string>storage.type</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#72ffcb</string> <!-- Teal glow -->
+        </dict>
+      </dict>
+
+      <!-- Constants (true, false, null, etc.) -->
+      <dict>
+        <key>scope</key>
+        <string>constant.language</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#924dff</string> <!-- Intense purple -->
+        </dict>
+      </dict>
+
+      <!-- Operators (+, -, *, /, etc.) -->
+      <dict>
+        <key>scope</key>
+        <string>keyword.operator</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#00FFFF</string> <!-- Neon cyan -->
+        </dict>
+      </dict>
+
+      <!-- Tags (HTML, XML) -->
+      <dict>
+        <key>scope</key>
+        <string>entity.name.tag</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#ff62a5</string> <!-- Soft pink -->
+        </dict>
+      </dict>
+
+      <!-- Attributes (HTML, CSS) -->
+      <dict>
+        <key>scope</key>
+        <string>entity.other.attribute-name</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#5affd6</string> <!-- Bright cyan -->
+        </dict>
+      </dict>
+
+      <!-- Escape Characters -->
+      <dict>
+        <key>scope</key>
+        <string>constant.character.escape</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#b870ff</string> <!-- Deep electric purple -->
+        </dict>
+      </dict>
+
+      <!-- Embedded Code Blocks -->
+      <dict>
+        <key>scope</key>
+        <string>punctuation.definition</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#ff3ca6</string> <!-- Neon pink -->
+        </dict>
+      </dict>
+    </array>
+  </dict>
+</plist>

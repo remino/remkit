@@ -1,0 +1,7 @@
+#customization-footer {
+	order: -1;
+}
+
+#customization-panelWrapper > .panel-arrowbox {
+	visibility: hidden;
+}

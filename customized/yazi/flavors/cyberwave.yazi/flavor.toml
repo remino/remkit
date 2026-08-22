@@ -1,0 +1,114 @@
+# Cyberwave for Yazi
+# Shared palette: ghostty/themes/Cyberwave
+
+[[filetype.rules]]
+mime = "image/*"
+fg = "#e09abe"
+
+[[filetype.rules]]
+mime = "{audio,video}/*"
+fg = "#c743cf"
+
+[[filetype.rules]]
+mime = "application/{zip,rar,7z*,tar,gzip,xz,zstd,bzip*,lzma,compress,archive,cpio,arj,xar,ms-cab*}"
+fg = "#db5ca6"
+
+[[filetype.rules]]
+mime = "application/{pdf,doc,rtf}"
+fg = "#51bde6"
+
+[[filetype.rules]]
+mime = "vfs/{absent,stale}"
+fg = "#424242"
+
+[[filetype.rules]]
+url = "*"
+is = "orphan"
+fg = "#db5ca6"
+bg = "#11111c"
+
+[[filetype.rules]]
+url = "*"
+is = "exec"
+fg = "#5ad0d4"
+
+[[filetype.rules]]
+url = "*/"
+fg = "#5ad0d4"
+
+[app]
+overall = { bg = "#000000" }
+
+[mgr]
+cwd = { fg = "#5ad0d4", bold = true }
+find_keyword = { fg = "#000000", bg = "#e09abe", bold = true, italic = true, underline = true }
+find_position = { fg = "#000000", bg = "#7b80f7", bold = true }
+symlink_target = { fg = "#51bde6", italic = true }
+marker_copied = { fg = "#000000", bg = "#5ad0d4" }
+marker_cut = { fg = "#000000", bg = "#db5ca6" }
+marker_marked = { fg = "#000000", bg = "#e09abe" }
+marker_selected = { fg = "#000000", bg = "#7b80f7" }
+border_symbol = "│"
+border_style = { fg = "#424242" }
+
+[input]
+border = { fg = "#5ad0d4" }
+title = { fg = "#db5ca6", bold = true }
+selected = { fg = "#000000", bg = "#7b80f7" }
+
+[cmp]
+border = { fg = "#51bde6" }
+active = { fg = "#000000", bg = "#7b80f7" }
+
+[tasks]
+border = { fg = "#c743cf" }
+hovered = { fg = "#e09abe", bold = true }
+
+[help]
+border = { fg = "#51bde6" }
+on = { fg = "#5ad0d4" }
+run = { fg = "#e09abe" }
+desc = { fg = "#e0e0e0" }
+hovered = { fg = "#000000", bg = "#7b80f7", bold = true }
+
+[which]
+cols = 3
+separator = " → "
+separator_style = { fg = "#424242" }
+mask = { bg = "#11111c" }
+cand = { fg = "#5ad0d4" }
+rest = { fg = "#424242" }
+desc = { fg = "#e09abe" }
+
+[confirm]
+border = { fg = "#db5ca6" }
+title = { fg = "#db5ca6", bold = true }
+body = { fg = "#e0e0e0" }
+list = { fg = "#e0e0e0" }
+btn_yes = { fg = "#000000", bg = "#5ad0d4" }
+btn_no = { fg = "#000000", bg = "#db5ca6" }
+
+[spot]
+border = { fg = "#7b80f7" }
+title = { fg = "#e09abe", bold = true }
+
+[status]
+overall = { fg = "#e0e0e0", bg = "#000000" }
+sep_left = { open = "", close = "" }
+sep_right = { open = "", close = "" }
+perm_type = { fg = "#5ad0d4" }
+perm_read = { fg = "#51bde6" }
+perm_write = { fg = "#e09abe" }
+perm_exec = { fg = "#db5ca6" }
+perm_sep = { fg = "#424242" }
+progress_label = { fg = "#e09abe", bold = true }
+progress_normal = { fg = "#5ad0d4", bg = "#424242" }
+progress_error = { fg = "#db5ca6", bg = "#424242" }
+
+[mode]
+normal_main = { fg = "#000000", bg = "#5ad0d4", bold = true }
+normal_alt = { fg = "#5ad0d4", bg = "#000000" }
+select_main = { fg = "#000000", bg = "#e09abe", bold = true }
+select_alt = { fg = "#e09abe", bg = "#000000" }
+unset_main = { fg = "#000000", bg = "#db5ca6", bold = true }
+unset_alt = { fg = "#db5ca6", bg = "#000000" }

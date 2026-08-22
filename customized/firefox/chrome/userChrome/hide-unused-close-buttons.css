@@ -1,0 +1,5 @@
+.tabbrowser-tab:not([visuallyselected], :hover)
+	> .tab-stack > .tab-content > .tab-close-button
+{
+	display: none;
+}

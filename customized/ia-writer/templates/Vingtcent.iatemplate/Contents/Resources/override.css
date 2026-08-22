@@ -1,0 +1,7 @@
+
+@import url("style/style-lang.css");
+@import url("style/style-override.css");
+
+html :lang(grc) {
+    font-family: iAWriterDuo5, sans-serif;
+}

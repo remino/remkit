@@ -1,0 +1,22 @@
+{
+	"name": "Cyberwave",
+	"background": "#000000",
+	"cursorColor": "#b634b3",
+	"foreground": "#e0e0e0",
+	"black": "#000000",
+	"red": "#f441aa",
+	"green": "#41e6eb",
+	"yellow": "#ed8cbe",
+	"blue": "#7178ff",
+	"purple": "#df27eb",
+	"cyan": "#38c6ff",
+	"white": "#ffffff",
+	"brightBlack": "#424242",
+	"brightRed": "#f441aa",
+	"brightGreen": "#41e6eb",
+	"brightYellow": "#ed8cbe",
+	"brightBlue": "#7178ff",
+	"brightPurple": "#df27eb",
+	"brightCyan": "#38c6ff",
+	"brightWhite": "#ffffff"
+}

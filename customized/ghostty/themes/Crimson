@@ -1,0 +1,40 @@
+# Crimson for Ghostty
+# Derived from iterm/profiles/Rem.json and iterm/themes/Crimson.itermcolors
+
+# Rem-compatible profile settings
+font-family = "Sarasa Term J Nerd Font Light"
+font-size = 16
+window-width = 80
+window-height = 40
+window-colorspace = display-p3
+term = xterm-256color
+cursor-style = underline
+cursor-style-blink = true
+background-opacity = 0.9198036501065214
+background-blur = 24
+bold-color = bright
+
+# Crimson palette
+palette = 0=#000000
+palette = 1=#DA4530
+palette = 2=#C96A63
+palette = 3=#DE837C
+palette = 4=#B45160
+palette = 5=#DB5A90
+palette = 6=#C96B7A
+palette = 7=#FFFFFF
+palette = 8=#424242
+palette = 9=#DA4530
+palette = 10=#C96A63
+palette = 11=#DE837C
+palette = 12=#B45160
+palette = 13=#DB5A90
+palette = 14=#C96B7A
+palette = 15=#FFFFFF
+
+background = #000000
+foreground = #E0E0E0
+cursor-color = #BC1E1E
+cursor-text = #FFFFFF
+selection-background = #99261E
+selection-foreground = #FFFFFF

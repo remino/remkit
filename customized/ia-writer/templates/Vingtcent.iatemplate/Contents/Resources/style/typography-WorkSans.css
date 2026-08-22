@@ -1,0 +1,88 @@
+/* Line Height */
+
+html {
+	--line-height-base: 160;
+	--line-height-base-viewport-adjustment: 0;
+}
+
+@media screen {
+	html.content-size-4xs {
+		--line-height-base: 170;
+	}
+	html.content-size-3xs {
+		--line-height-base: 169;
+	}
+	html.content-size-2xs {
+		--line-height-base: 168;
+	}
+	html.content-size-xs {
+		--line-height-base: 167;
+	}
+	html.content-size-s {
+		--line-height-base: 166;
+	}
+	html.content-size-m {
+		--line-height-base: 165;
+	}
+	html.content-size-l {
+		--line-height-base: 164;
+	}
+	html.content-size-xl {
+		--line-height-base: 163;
+	}
+	html.content-size-2xl {
+		--line-height-base: 159;
+	}
+	html.content-size-3xl {
+		--line-height-base: 155;
+	}
+	html.content-size-4xl {
+		--line-height-base: 151;
+	}
+	html.content-size-5xl {
+		--line-height-base: 147;
+	}
+	html.content-size-6xl {
+		--line-height-base: 142;
+	}
+	html.content-size-7xl {
+		--line-height-base: 137;
+	}
+	html.content-size-8xl {
+		--line-height-base: 132;
+	}
+	html.content-size-9xl {
+		--line-height-base: 127;
+	}
+	html.content-size-10xl {
+		--line-height-base: 123;
+	}
+}
+
+@media print {
+	html {
+		--font-size: 12px;
+		--line-height-base: 155;
+	}
+}
+
+/* Compact */
+@media screen and (max-width: 414px) {
+	html {
+		--line-height-base-viewport-adjustment: -10;
+	}
+}
+
+/* Regular */
+@media screen and (min-width: 415px) and (max-width: 1250px) {
+	html {
+		--line-height-base-viewport-adjustment: 0;
+	}
+}
+
+/* ≥Wide */
+@media screen and (min-width: 1251px) {
+	html {
+		--line-height-base-viewport-adjustment: +10;
+	}
+}

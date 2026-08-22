@@ -1,0 +1,14 @@
+
+@font-face {
+  font-family: "iAWriterMono";
+  font-weight: 400 700;
+  font-style: normal;
+  src: local("iA Writer Mono"), url("iAWriterMono.ttf");
+}
+
+@font-face {
+  font-family: "iAWriterMono";
+  font-weight: 400 700;
+  font-style: italic;
+  src: local("iA Writer Mono"), url("iAWriterMono-Italic.ttf");
+}

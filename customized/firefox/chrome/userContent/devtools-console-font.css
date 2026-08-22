@@ -1,0 +1,7 @@
+@-moz-document url-prefix("chrome://devtools/content") {
+	body {
+		--monospace-font-family: "Sarasa Term J Nerd Font", monospace;
+		--theme-body-font-size: 12px;
+		--theme-code-font-size: 16px;
+	}
+}

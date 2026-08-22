@@ -1,0 +1,15 @@
+/* Made for Mininal theme */
+
+.theme-dark,
+.theme-light {
+	--h1-color: color-mix(in srgb, var(--tx1) 90%, var(--ax1) 10%);
+	--h2-color: color-mix(in srgb, var(--tx1) 80%, var(--ax1) 20%);
+	--h3-color: color-mix(in srgb, var(--tx1) 70%, var(--ax1) 30%);
+	--h4-color: color-mix(in srgb, var(--tx1) 60%, var(--ax1) 40%);
+	--h5-color: color-mix(in srgb, var(--tx1) 50%, var(--ax1) 50%);
+	--h6-color: color-mix(in srgb, var(--tx1) 40%, var(--ax1) 60%);
+
+	--h4-weight: bold;
+	--h5-variant: inherit;
+	--h5-weight: bold;
+}

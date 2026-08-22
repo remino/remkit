@@ -1,0 +1,32 @@
+
+@font-face {
+  font-family: "iAWriterEmphasisSpaced";
+  font-weight: 400;
+  font-style: normal;
+  unicode-range: U+E000-E001;
+  src: local("iAWriterEmphasisSpaced"), local("iA Writer Emphasis Spaced"), url("iAWriterEmphasisSpaced.ttf");
+}
+
+@font-face {
+  font-family: "iAWriterEmphasisSpaced";
+  font-weight: 450;
+  font-style: normal;
+  unicode-range: U+E000-E001;
+  src: local("iAWriterEmphasisSpaced"), local("iA Writer Emphasis Spaced"), url("iAWriterEmphasisSpaced.ttf");
+}
+
+@font-face {
+  font-family: "iAWriterEmphasisSpaced";
+  font-weight: 600;
+  font-style: normal;
+  unicode-range: U+E000-E001;
+  src: local("iAWriterEmphasisSpaced"), local("iA Writer Emphasis Spaced"), url("iAWriterEmphasisSpaced.ttf");
+}
+
+@font-face {
+  font-family: "iAWriterEmphasisSpaced";
+  font-weight: 700;
+  font-style: normal;
+  unicode-range: U+E000-E001;
+  src: local("iAWriterEmphasisSpaced"), local("iA Writer Emphasis Spaced"), url("iAWriterEmphasisSpaced.ttf");
+}

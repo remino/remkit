@@ -1,0 +1,400 @@
+/* RESET */
+
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+/*
+  2. Remove default margin
+*/
+* {
+	margin: 0;
+}
+/*
+  3. Allow percentage-based heights in the application
+*/
+html,
+body {
+	height: 100%;
+}
+/*
+  Typographic tweaks!
+  4. Add accessible line-height
+  5. Improve text rendering
+*/
+body {
+	line-height: 1.5;
+	-webkit-font-smoothing: antialiased;
+}
+/*
+  6. Improve media defaults
+*/
+img,
+picture,
+video,
+canvas,
+svg {
+	display: block;
+	max-width: 100%;
+}
+/*
+  7. Remove built-in form typography styles
+*/
+input,
+button,
+textarea,
+select {
+	font: inherit;
+}
+/*
+  8. Avoid text overflows
+*/
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	overflow-wrap: break-word;
+}
+/*
+  9. Create a root stacking context
+*/
+#root,
+#__next {
+	isolation: isolate;
+}
+
+/* END RESET */
+
+/* CUSTOM */
+
+/* FONT SIZE RESET */
+
+.entry-content,
+.entry-enclosures summary,
+.entry-meta,
+.header a,
+.pagination,
+.header li,
+.item-meta,
+.item-meta-info,
+.category,
+.entry header h1,
+h1,
+h2,
+h3 {
+	font-size: inherit;
+}
+
+/* GLOBALS */
+
+:root {
+	/* Typography */
+	--font-family: system-ui, 'Segoe UI', sans-serif;
+	--font-size: 16px;
+	--line-height: 1.6;
+	/* Colors */
+	--background-color: #111;
+	--border-color: #333;
+	--link-underline-color: #b4b4b4;
+	/* Text Colors */
+	--main-text-color: #eee;
+	--dim-text-color: #ddd;
+	--link-color: #fff;
+	--dim-link-color: #ccc;
+	--emphasized-text-color: #fff;
+	/* Category Colors */
+	--category-default-color: rgb(224 224 224);
+	--category-misc-color: rgb(232, 232, 177);
+	--category-tech-color: rgb(192, 237, 192);
+	--category-games-color: rgb(243, 153, 153);
+	--category-news-color: rgb(179, 228, 243);
+	--category-video-color: rgb(228, 128, 94);
+}
+
+@media (prefers-color-scheme: light) {
+	:root {
+		--background-color: #fefefe;
+		--border-color: #eee;
+		--link-underline-color: #b4b4b4;
+		/* Text */
+		--main-text-color: #333;
+		--dim-text-color: #666;
+		--link-color: #000;
+		--dim-link-color: #888;
+		--emphasized-text-color: #000;
+	}
+}
+
+html {
+	font-size: var(--font-size);
+	line-height: var(--line-height);
+}
+
+body {
+	font: var(--font-size) / var(--line-height) var(--font-family);
+	background: var(--background-color);
+	color: var(--main-text-color);
+	padding: 1rem;
+	max-width: 100ch;
+}
+
+a {
+	color: var(--link-color);
+	text-decoration-color: var(--link-underline-color);
+}
+
+a:hover {
+	color: var(--link-color);
+	text-decoration-color: var(--link-color);
+	text-decoration: underline;
+}
+
+h1,
+h2,
+h3 {
+	color: var(--main-text-color);
+}
+
+/* NAVIGATION AND LINKS */
+
+.logo a {
+	color: inherit;
+	text-decoration-color: inherit;
+}
+
+.item-meta-icons a span {
+	text-decoration: none;
+}
+
+.item-meta-icons a span:hover,
+.item-meta-icons button:hover {
+	text-decoration-color: var(--link-color);
+	text-decoration: underline;
+}
+
+.logo a:hover {
+	color: inherit;
+	text-decoration-color: var(--link-color);
+	text-decoration: underline;
+}
+
+@media (min-width: 620px) {
+	:root {
+		--font-size: 15px;
+	}
+
+	.logo {
+		display: none;
+	}
+
+	.header nav ul:not(.js-menu-show) {
+		display: flex;
+		gap: 1rem;
+	}
+
+	.header nav li {
+		padding: 0;
+	}
+
+	.header nav li.active:before {
+		content: '';
+		height: 10px;
+		width: 10px;
+		background: var(--main-text-color);
+		display: inline-block;
+		border-radius: 10px;
+	}
+}
+
+@media (max-width: 620px) {
+	.logo a {
+		visibility: hidden;
+		height: 0;
+		font-size: 1px;
+		letter-spacing: -1px;
+		text-align: left;
+	}
+
+	.logo a:before {
+		content: 'Menu';
+		background: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 50 50' width='50px' height='50px'%3E%3Cstyle%3E path %7B fill: black; %7D @media (prefers-color-scheme: dark) %7B path %7B fill: white; %7D %7D %3C/style%3E%3Cpath d='M 0 9 L 0 11 L 50 11 L 50 9 Z M 0 24 L 0 26 L 50 26 L 50 24 Z M 0 39 L 0 41 L 50 41 L 50 39 Z'/%3E%3C/svg%3E")
+			no-repeat center left;
+		background-size: 16px 16px;
+		display: block;
+		visibility: initial;
+		font-size: initial;
+		letter-spacing: initial;
+		margin-bottom: -1rem;
+		padding-left: 20px;
+	}
+}
+
+.header {
+	margin: 0 0 1rem;
+	padding: 0;
+}
+
+.header a {
+	font-size: 1rem;
+}
+
+.header .active a {
+	color: var(--emphasized-text-color);
+}
+
+.header li {
+	list-style-type: none;
+	padding: 0;
+}
+
+.header li a:hover {
+	color: var(--link-color);
+}
+
+/* ITEMS */
+
+.entry header h1 {
+	font-size: 1.1rem;
+	margin: 1rem 0 0;
+}
+
+.item:not(:last-child) {
+	border-bottom: 1px solid var(--border-color);
+}
+
+.item {
+	border: none;
+	margin: 0;
+	padding: 1rem 0;
+}
+
+.item-header {
+	display: flex;
+	align-items: baseline;
+	justify-content: space-between;
+	gap: 0.5rem;
+}
+
+.entry-actions a span {
+	text-decoration: none;
+}
+
+.item-meta a {
+	color: var(--dim-link-color);
+}
+
+.item-meta a:hover {
+	color: var(--link-color);
+}
+
+.entry header h1,
+.item-title {
+	font-size: 1.2rem;
+}
+
+.item-title a {
+	font-weight: normal;
+}
+
+span.feed-entries-counter {
+	flex: 1;
+}
+
+.item:has(a[data-value='star']) .item-title a {
+	font-weight: bold;
+}
+
+.item-title img,
+.entry-website img {
+	display: inline-block;
+}
+
+article.feed-has-unread {
+	background: none;
+	border: none;
+}
+
+/* CATEGORY LABEL COLORS */
+.category {
+	background-color: var(--category-background-color);
+	border-color: rgba(0, 0, 0, 0.1);
+}
+/* Note: 
+        This is not currently feasible, because aria-labels do
+        not appear in Unread/History.
+        Instead, I personally use the IDs. Personalize these according
+        to your own.
+*/
+/* .category:has(a[aria-label~="💻"]) {
+    background-color: rgba(0, 0, 0, 0.1);
+    border-color: rgba(0, 0, 0, 0.1);
+} */
+span.category:has(a[href^='/category/2']) {
+	background-color: var(--category-tech-color);
+}
+
+span.category:has(a[href^='/category/3']) {
+	background-color: var(--category-games-color);
+}
+
+span.category:has(a[href^='/category/4']) {
+	background-color: var(--category-misc-color);
+}
+
+span.category:has(a[href^='/category/5']) {
+	background-color: var(--category-news-color);
+}
+
+span.category:has(a[href^='/category/6']) {
+	background-color: var(--category-video-color);
+}
+
+/* CONTENT */
+
+main {
+	padding: 0;
+}
+
+.page-header h1 {
+	border: none;
+}
+
+.entry header {
+	border: none;
+}
+
+.entry-content {
+	line-height: inherit;
+}
+
+.entry-content p {
+	margin: 0;
+}
+
+.entry-content p:first-of-type {
+	margin-top: 1rem;
+}
+
+.entry-content p:not(:last-child) {
+	margin-bottom: 1rem;
+}
+
+.entry header h1 a {
+	color: var(--emphasized-text-color);
+}
+
+.pagination-entry-bottom,
+.pagination-entry-top {
+	border-top: 1px solid var(--border-color);
+	margin: 0;
+	padding: 0;
+	padding-top: 1.5rem;
+	margin-top: 1.5rem;
+}

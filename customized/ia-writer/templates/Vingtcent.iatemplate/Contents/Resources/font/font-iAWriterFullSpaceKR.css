@@ -1,0 +1,8 @@
+
+@font-face {
+  font-family: "iAWriterFullSpaceKR";
+  font-weight: 400 700;
+  font-style: normal;
+  unicode-range: U+0-8, U+B-C, U+E-1F, U+21-9F, U+A1-2027, U+202A-FFFF;
+  src: local("iA Writer FullSpace KR"), url("iAWriterFullSpaceKR.ttf");
+}

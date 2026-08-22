@@ -1,0 +1,14 @@
+
+@font-face {
+  font-family: "iAWriterQuattro";
+  font-weight: 400 700;
+  font-style: normal;
+  src: local("iA Writer Quattro"), url("iAWriterQuattro.ttf");
+}
+
+@font-face {
+  font-family: "iAWriterQuattro";
+  font-weight: 400 700;
+  font-style: italic;
+  src: local("iA Writer Quattro"), url("iAWriterQuattro-Italic.ttf");
+}
