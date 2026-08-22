@@ -1,0 +1,51 @@
+#!/bin/sh
+
+set -eu
+
+config_home=${XDG_CONFIG_HOME:-"$HOME/.config"}
+marker="$config_home/agent-skills/notify-when-done.enabled"
+
+usage() {
+	printf '%s\n' "Usage: ${0##*/} {enable|disable|status|send <title> <result> <context>}" >&2
+	exit 64
+}
+
+enabled() {
+	test -f "$marker"
+}
+
+case ${1:-} in
+	enable)
+		test "$#" -eq 1 || usage
+		mkdir -p "${marker%/*}"
+		: > "$marker"
+		printf '%s\n' 'Completion notifications enabled.'
+		;;
+	disable)
+		test "$#" -eq 1 || usage
+		rm -f "$marker"
+		printf '%s\n' 'Completion notifications disabled.'
+		;;
+	status)
+		test "$#" -eq 1 || usage
+		if enabled; then
+			printf '%s\n' enabled
+		else
+			printf '%s\n' disabled
+		fi
+		;;
+	send)
+		test "$#" -eq 4 || usage
+		if ! enabled; then
+			exit 0
+		fi
+		if ! command -v iftttnotify >/dev/null 2>&1; then
+			printf '%s\n' 'iftttnotify is required; install it with: brew install remino/remino/iftttnotify' >&2
+			exit 127
+		fi
+		exec iftttnotify -e notify "$2" "$3" "$4"
+		;;
+	*)
+		usage
+		;;
+esac

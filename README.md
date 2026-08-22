@@ -1,6 +1,6 @@
 # remkit
 
-Collection of scripts, snippets, customisations, and tools.
+Collection of scripts, agent skills, snippets, customisations, and tools.
 
 2026 Rémino Rem <https://remino.net/>
 
@@ -38,6 +38,7 @@ Some bookmarklets have their own pages:
 - `customized/` holds application and terminal customizations.
 - `cheatsheets/` and `quickref/` hold command and application references.
 - `snippets/` holds reusable examples across languages.
+- `skills/` holds reusable agent skills.
 - The remaining top-level directories contain focused utilities and
   configuration for tools such as Karabiner, Photoshop, Raycast, JXA, and
   shaders.
