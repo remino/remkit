@@ -1,0 +1,11 @@
+# Define the custom completion function
+_mycommand_completion() {
+  local -a names
+  names=("Alice Johnson" "Bob Smith" "Charlie Brown" "David Jones" "Eve White")  # List of names with spaces
+
+  # Enable substring matching to match any part of the name
+  compadd -M 'l:|=* r:|=*' -- "${names[@]}"
+}
+
+# Register the completion function for 'mycommand'
+compdef _mycommand_completion mycommand
