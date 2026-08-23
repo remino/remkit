@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Redirecting&hellip;</title>
+		<meta http-requiv="Refresh" content="0;url=/target/" />
+		<style></style>
+	</head>
+	<body>
+		<p>Redirecting to <a href="/target/">Target</a>&hellip;</p>
+		<script>
+			;(() => {
+				'use strict'
+
+				function redirect() {
+					const targetUrl = new URL('/target/', window.location.origin)
+					targetUrl.search = window.location.search
+					targetUrl.hash = window.location.hash
+					window.location.replace(targetUrl.toString())
+				}
+
+				redirect()
+			})()
+		</script>
+	</body>
+</html>
