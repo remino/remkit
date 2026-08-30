@@ -1,0 +1,88 @@
+# Cyberwave for Lynx
+#
+# Uses Cyberwave's ANSI palette: cyan for links and status, periwinkle for
+# headings and selections, and pink for emphasis and alerts.
+normal:		normal:			lightgray:black
+default:	normal:			white:black
+
+em:		bold:			brightblue
+strong:		bold:			brightred
+b:		bold:			brightred
+i:		bold:			brightblue
+a:		bold:			brightgreen
+img:		dim:			brown
+fig:		normal:			gray
+caption:	reverse:		brightmagenta
+hr:		normal:			brightgreen
+blockquote:	normal:			brightblue
+ul:		normal:			brightmagenta
+address:	normal:			brightmagenta
+title:		normal:			brightmagenta
+tt:		dim:			brightmagenta:	black
+h1:		bold:			white:		brightblue
+label:		normal:			magenta
+q:		normal:			yellow:		magenta
+small:		dim:			default
+big:		bold:			yellow
+sup:		bold:			yellow
+sub:		dim:			gray
+li:		normal:			brightmagenta
+code:		normal:			brightcyan
+cite:		normal:			brightcyan
+
+table:		normal:			brightcyan
+tr:		bold:			brightmagenta
+td:		normal:			default
+br:		normal:			default
+
+alink:		reverse:		black:		brightblue
+status:		normal:			black:		brightcyan
+alert:		bold:			black:		brightred
+whereis:	reverse+underline:	black:		brightblue
+
+menu.bg:	normal:			black:		lightgray
+menu.frame:	normal:			black:		lightgray
+menu.entry:	normal:			lightgray:	black
+menu.n:		normal:			red:		gray
+menu.active:	normal:			black:		brightblue
+menu.sb:	normal:			brightcyan:	lightgray
+
+forwbackw.arrow:reverse
+hot.paste:	normal:			brightred:	gray
+
+ul.red:		underline:		brightred
+ul.blue:	bold:			brightblue
+li.red:		reverse:		red:		yellow
+li.blue:	bold:			blue
+strong.a:	bold:			black:		red
+em.a:		reverse:		black:		blue
+strong.b:	bold:			white:		red
+em.b:		reverse:		white:		blue
+strong.debug:	reverse:		green
+font.letter:	normal:			white:		blue
+input.submit:	normal:			cyan
+tr.baone:	bold:			yellow
+tr.batwo:	bold:			green
+tr.bathree:	bold:			red
+
+link:		normal:			brightcyan
+link.green:	bold:			brightgreen
+link.red:	bold:			black:		red
+link.blue:	bold:			white:		blue
+link.toc:	bold:			black:		white
+link.red.next:	bold:			red
+link.red.prev:	bold:			yellow:		red
+link.blue.prev:	bold:			yellow:		blue
+link.blue.next:	bold:			blue
+link.green.toc:	bold:			white:		green
+
+span.htmlsrc_comment:normal:		white
+span.htmlsrc_tag:normal:		white
+span.htmlsrc_attrib:normal:		cyan
+span.htmlsrc_attrval:normal:		magenta
+span.htmlsrc_abracket:normal:		white
+span.htmlsrc_entity:normal:		white
+span.htmlsrc_badseq:normal:		red
+span.htmlsrc_badtag:normal:		red
+span.htmlsrc_badattr:normal:		red
+span.htmlsrc_sgmlspecial:normal:		yellow
