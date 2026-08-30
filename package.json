@@ -23,7 +23,7 @@
 		"url": "git+https://github.com/remino/remkit.git"
 	},
 	"scripts": {
-		"start": "./bin/bookmarklets compile"
+		"bookmarklets:build": "./bin/bookmarklets compile"
 	},
 	"version": "1.0.0",
 	"devDependencies": {
