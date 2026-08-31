@@ -1,2 +1,5 @@
 # Get latest commit ID on current branch
 git rev-parse HEAD
+
+# Create an orphan branch
+git switch --orphan <branch-name>
