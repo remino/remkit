@@ -11,6 +11,7 @@ Collection of scripts, agent skills, snippets, customisations, and tools.
 
 - [Browser tools](#browser-tools)
 - [Toolbox](#toolbox)
+- [Agent skills](#agent-skills)
 - [Development](#development)
     - [Bookmarklets](#bookmarklets)
 - [Licence](#licence)
@@ -42,6 +43,17 @@ Some bookmarklets have their own pages:
 - The remaining top-level directories contain focused utilities and
   configuration for tools such as Karabiner, Photoshop, Raycast, JXA, and
   shaders.
+
+## Agent skills
+
+Install a skill for Codex with [`npx skills`](https://www.skills.sh/docs/cli):
+
+```sh
+npx skills add remino/remkit --skill guided-commits --agent codex
+```
+
+Replace `guided-commits` with the skill you want to install. Omit `--skill` to
+choose from the repository interactively.
 
 ## Development
 
