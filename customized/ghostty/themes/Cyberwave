@@ -3,6 +3,12 @@
 
 # Rem-compatible profile settings
 font-family = "Sarasa Term J Nerd Font Light"
+# The regular face is deliberately Light, so declare the real bold face rather
+# than relying on a style lookup from that separate family.
+font-family-bold = "Sarasa Term J Nerd Font"
+font-style-bold = "Bold"
+font-family-bold-italic = "Sarasa Term J Nerd Font"
+font-style-bold-italic = "Bold Italic"
 font-size = 16
 window-width = 80
 window-height = 40
