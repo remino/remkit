@@ -30,12 +30,14 @@ palette = 5=#C743CF
 palette = 6=#51BDE6
 palette = 7=#FFFFFF
 palette = 8=#424242
-palette = 9=#DB5CA6
-palette = 10=#5AD0D4
-palette = 11=#E09ABE
-palette = 12=#7B80F7
-palette = 13=#C743CF
-palette = 14=#51BDE6
+# Bright variants intentionally lift the matching normal ANSI colors so SGR
+# bright and bold text remains distinguishable.
+palette = 9=#FF7AC6
+palette = 10=#84DCE0
+palette = 11=#F6C2D9
+palette = 12=#A9AEFF
+palette = 13=#F06CF8
+palette = 14=#86D7FF
 palette = 15=#FFFFFF
 
 background = #000000
