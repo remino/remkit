@@ -3,3 +3,6 @@ git rev-parse HEAD
 
 # Create an orphan branch
 git switch --orphan <branch-name>
+
+# Pass custom path to ssh and args for git
+GIT_SSH_COMMAND="ssh" git clone git@host:repo.git
