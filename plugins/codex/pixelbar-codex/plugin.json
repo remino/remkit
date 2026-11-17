@@ -1,0 +1,14 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "pixelbar-codex",
+  "version": "0.1.0",
+  "description": "An on-demand project status panel inspired by pixelbar for Claude Code.",
+  "author": {
+    "name": "Rémino Rem",
+    "url": "https://remino.net/"
+  },
+  "homepage": "https://github.com/remino/remkit/tree/main/plugins/codex/pixelbar-codex",
+  "repository": "https://github.com/remino/remkit",
+  "license": "ISC",
+  "keywords": ["codex", "status", "git", "terminal"]
+}
