@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="viewport-fit=cover, width=device-width, initial-scale=1.0" />
+		<title>Fullscreen example</title>
+		<style>
+			body {
+				font-family: system-ui, sans-serif;
+				margin: 2rem;
+			}
+		</style>
+	</head>
+	<body>
+		<main>
+			<h1>Fullscreen example</h1>
+			<p>Fullscreen must be requested in response to a user action.</p>
+			<button type="button" id="fullscreen">Enter fullscreen</button>
+		</main>
+
+		<script>
+			const button = document.querySelector('#fullscreen')
+
+			button.addEventListener('click', async () => {
+				try {
+					await document.documentElement.requestFullscreen()
+				} catch (error) {
+					console.error('Could not enter fullscreen.', error)
+				}
+			})
+		</script>
+	</body>
+</html>
