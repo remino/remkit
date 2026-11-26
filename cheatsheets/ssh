@@ -52,6 +52,15 @@ sshfs <user>@<host>:/path/to/folder /path/to/mount/point
 # Doc: http://www.gnu.org/software/emacs/manual/html_node/emacs/Remote-Files.html
 emacs /ssh:<user>@<host>:<file>
 
+# Get fingerprint from ssh itself
+ssh-keygen -lf /etc/ssh/ssh_host_ed25519_key.pub -E sha256
+
+# Get server host key fingerprint from host itself
+cat /etc/ssh/ssh_host_ed25519_key.pub
+
+# Retrieve host key fingerprint remotely
+ssh-keyscan -t ed25519 hostname | ssh-keygen -lf - -E sha256
+
 # Bypass known_hosts checking and prevent saving the host key
 ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null user@host
 
