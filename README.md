@@ -1,4 +1,4 @@
-# remkit
+# RemKit
 
 Collection of scripts, agent skills, snippets, customisations, and tools.
 
